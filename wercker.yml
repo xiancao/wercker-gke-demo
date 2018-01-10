@@ -54,9 +54,9 @@ deploy-to-kubernetes:
     #    gke-cluster-zone: $GKE_CLUSTER_ZONE
     #    gke-cluster-project: $GKE_CLUSTER_PROJECT
     #    command: apply -f $WERCKER_OUTPUT_DIR/kubernetes/
-    -kubectl:
-       name: deploy to kubernetes
-       server: $KUBERNETES_MASTER
-       username: $KUBERNETES_USERNAME
-       password: $KUBERNETES_PASSWORD
-       insecure-skip-tls-verify: true
+    - kubectl:
+        name: deploy to kubernetes
+        server: $KUBERNETES_MASTER
+        username: $KUBERNETES_USERNAME
+        password: $KUBERNETES_PASSWORD
+        insecure-skip-tls-verify: true
